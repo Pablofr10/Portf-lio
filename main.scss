@@ -1,23 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
   color: #f4a460;
+  cursor: pointer;
 }
 
-
-$font-family: 'Noto Sans JP', sans-serif;
+$font-family: "Noto Sans JP", sans-serif;
+$primary-color:#f8f8ff;
+$secoundary-color: #f4a460;
 
 body {
-  background: #f8f8ff;
-  font-family: 'Noto Sans JP', sans-serif;
+  background: $primary-color;
+  font-family: "Roboto", sans-serif;
 }
 
 li {
@@ -32,6 +35,12 @@ li {
 
   &_logo {
     margin-left: 10px;
+
+    h3 {
+      font-size: 2rem;
+      color: $secoundary-color;    
+      text-transform: uppercase;  
+    }
   }
 
   &_menu {
@@ -43,33 +52,34 @@ li {
         a {
           text-transform: uppercase;
           transition: color 0.2s ease-in;
+          font-size: 1.2rem;
           &:hover {
-            color: #4169E1;
-            transition: 0.2s ease-in-out;            
-          }          
+            color: #4169e1;
+            transition: 0.2s ease-in-out;
+          }
         }
-        &:hover{
-            border-color: 1px solid chocolate;
+        &:hover {
+          border-color: 1px solid $secoundary-color;
         }
       }
     }
   }
 }
 
-.header{
-    width: 100%;
-    height: 100vh;
-    background: cornflowerblue;
+.header {
+  width: 100%;
+  height: 100vh;
+  background: cornflowerblue;
 }
 
-.main{
-    width: 100%;
-    height: 100vh;
-    background: blue;
+.main {
+  width: 100%;
+  height: 100vh;
+  background: blue;
 }
 
-.footer{
-    width: 100%;
-    height: 50px;
-    background: yellow;
+.footer {
+  width: 100%;
+  height: 50px;
+  background: yellow;
 }
